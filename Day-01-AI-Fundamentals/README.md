@@ -2,42 +2,26 @@
 
 ## Objective
 
-Learn how to connect a Python application to a Large Language Model using an API.
+Learn how to connect a Python application to a Large Language Model (LLM) using an API.
 
 ## Technologies
 
-* Python
-* Google Gemini API
-* google-genai
+- Python
+- Google Gemini API
+- google-genai
+- python-dotenv
 
 ## How It Works
 
 1. The user enters a question.
-2. Python sends the question to the Gemini API.
-3. The model processes the request.
-4. The API returns a response.
-5. Python displays the answer.
+2. Python reads the API key from the `.env` file.
+3. Python sends the question to the Gemini API.
+4. Gemini generates a response.
+5. Python displays the answer in the terminal.
 
 ## Installation
 
-Install the required package:
+Install the required packages:
 
-`pip install -r requirements.txt`
-
-## Configuration
-
-Set the `GEMINI_API_KEY` environment variable before running the application.
-
-Never upload API keys or other secrets to GitHub.
-
-## Run the Project
-
-`python Day-03-LLM-API/llm_api.py`
-
-## What I Learned
-
-* What an LLM API is
-* How Python communicates with an AI model
-* How to send a prompt
-* How to receive a model response
-* How to protect API credentials
+```bash
+pip install -r requirements.txt
